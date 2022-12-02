@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class OuterSpace extends World
 {
-    private int shieldLevel;
+    public int shieldLevel;
     private int score;
     /**
      * Constructor for objects of class OuterSpace.
@@ -19,7 +19,7 @@ public class OuterSpace extends World
         super(900, 700, 1); 
         prepare();
         setPaintOrder(InvaderDefender.class,Lazer.class);
-        shieldLevel = 100;
+        shieldLevel = 25;
         score = 0;
         showScore();
         showShieldLevel();
@@ -36,7 +36,7 @@ public class OuterSpace extends World
         addObject(new OneUp(), Greenfoot.getRandomNumber(870), 52);
        }
        win();
-       lose();
+       //lose();
     }
     /**
      * Prepare the world for the start of the program.
@@ -92,13 +92,15 @@ public class OuterSpace extends World
     /**
      * Lose. Play a sad song, display losing text, and stop the game.
      */
-    private void lose()
+    public void lose()
     {
-        if (shieldLevel == 0)
-        {
+        showText("YOU LOSE!",450,350);
+        Greenfoot.stop();
+        //if (shieldLevel <= 0)//calling this method from the InvaderDefender class
+        //{
             //Greenfoot.playSound(".wav");
-            showText("YOU LOSE!",450,350);
-            Greenfoot.stop();
-        }
+            //showText("YOU LOSE!",450,350);
+            //Greenfoot.stop();
+        //}
     }
 }

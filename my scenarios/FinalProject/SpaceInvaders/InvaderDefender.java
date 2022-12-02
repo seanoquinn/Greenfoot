@@ -29,7 +29,7 @@ public class InvaderDefender extends Actor
         checkKeyPressLR();
         fire();
         checkInvaderCollision();
-        checkLifeCollision();
+        checkShieldCollision();
     }
 
     /**
@@ -63,32 +63,41 @@ public class InvaderDefender extends Actor
         }
      }
     /**
-     * Check for a collision with an invader. If there is a collision, explode,
-     * and remove a life.
+     * Check for a collision with an invader. If there is a collision, reduce the shield. Once the shield
+     * is depleted, the final collision will end the game.
      */
      private void checkInvaderCollision()
      {
-        if (isTouching (Invader.class))
+        OuterSpace outerspace = (OuterSpace)getWorld();
+        int shieldLevel = outerspace.shieldLevel;
+        if (isTouching (Invader.class) && shieldLevel > 0)
+        {
+            //setImage(image2);
+            //Greenfoot.playSound("explosion.wav");
+            //Greenfoot.stop(); //moved this stop to OuterSpace.lose
+            removeTouching(Invader.class);
+            //OuterSpace outerspace = (OuterSpace)getWorld();
+            outerspace.addShield(-25);
+        }
+        else if (isTouching(Invader.class) && shieldLevel <= 0)
         {
             setImage(image2);
             Greenfoot.playSound("explosion.wav");
-            //Greenfoot.stop(); //moved this stop to OuterSpace.lose
-            OuterSpace outerspace = (OuterSpace)getWorld();
-            outerspace.addShield(-25);
+            outerspace.lose();  
         }
      }
     /**
      * Check for a collision with an extra life. If there is a collision, add
      * a life.
      */
-     private void checkLifeCollision()
+     private void checkShieldCollision()
      {
         if (isTouching (OneUp.class))
         {
             //Greenfoot.playSound(".wav");
             removeTouching(OneUp.class);
             OuterSpace outerspace = (OuterSpace)getWorld();
-            outerspace.addShield(1);
+            outerspace.addShield(25);
         }
      }
 }

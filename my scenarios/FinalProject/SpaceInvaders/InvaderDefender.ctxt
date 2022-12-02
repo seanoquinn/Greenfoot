@@ -17,6 +17,6 @@ comment5.params=
 comment5.target=void\ checkInvaderCollision()
 comment5.text=\n\ Check\ for\ a\ collision\ with\ an\ invader.\ If\ there\ is\ a\ collision,\ explode,\n\ and\ remove\ a\ life.\n
 comment6.params=
-comment6.target=void\ checkLifeCollision()
+comment6.target=void\ checkShieldCollision()
 comment6.text=\n\ Check\ for\ a\ collision\ with\ an\ extra\ life.\ If\ there\ is\ a\ collision,\ add\n\ a\ life.\n
 numComments=7
