@@ -21,6 +21,7 @@ public class OuterSpace extends World
         setPaintOrder(InvaderDefender.class,Lazer.class);
         shieldLevel = 100;
         score = 0;
+        //Greenfoot.playSound("game-play.wav");
         showScore();
         showShieldLevel();
     }
@@ -33,7 +34,7 @@ public class OuterSpace extends World
        }
        if (Greenfoot.getRandomNumber(1000) < 1)
        {
-        addObject(new OneUp(), Greenfoot.getRandomNumber(870), 52);
+        addObject(new Shield(), Greenfoot.getRandomNumber(870), 52);
        }
        win();
        //lose();
@@ -82,7 +83,7 @@ public class OuterSpace extends World
      */
     private void win()
     {
-        if (score == 400)
+        if (score >= 400)
         {
             //Greenfoot.playSound(".wav");
             showText("YOU WIN!",450,350);
@@ -95,6 +96,7 @@ public class OuterSpace extends World
     public void lose()
     {
         showText("YOU LOSE!",450,350);
+        //Greenfoot.playSound("game-over.wav");
         Greenfoot.stop();
         //if (shieldLevel <= 0)//calling this method from the InvaderDefender class
         //{

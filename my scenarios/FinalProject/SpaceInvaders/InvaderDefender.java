@@ -73,7 +73,7 @@ public class InvaderDefender extends Actor
         if (isTouching (Invader.class) && shieldLevel > 0)
         {
             //setImage(image2);
-            //Greenfoot.playSound("explosion.wav");
+            Greenfoot.playSound("hurt.wav");
             //Greenfoot.stop(); //moved this stop to OuterSpace.lose
             removeTouching(Invader.class);
             //OuterSpace outerspace = (OuterSpace)getWorld();
@@ -92,10 +92,10 @@ public class InvaderDefender extends Actor
      */
      private void checkShieldCollision()
      {
-        if (isTouching (OneUp.class))
+        if (isTouching (Shield.class))
         {
-            //Greenfoot.playSound(".wav");
-            removeTouching(OneUp.class);
+            Greenfoot.playSound("shield-up.wav");
+            removeTouching(Shield.class);
             OuterSpace outerspace = (OuterSpace)getWorld();
             outerspace.addShield(25);
         }
