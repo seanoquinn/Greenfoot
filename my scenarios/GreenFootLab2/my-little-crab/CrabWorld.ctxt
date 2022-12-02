@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=CrabWorld
+comment1.params=
+comment1.target=CrabWorld()
+comment1.text=\n\ Create\ the\ crab\ world\ (the\ beach).\ Our\ world\ has\ a\ size\ \n\ of\ 560x560\ cells,\ where\ every\ cell\ is\ just\ 1\ pixel.\n
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=int\ actCount()
+comment3.text=\n\ Increment\ per\ act.\n
+comment4.params=
+comment4.target=int\ countdown()
+comment4.text=\n\ Decrement\ per\ act.\n
+comment5.params=
+comment5.target=void\ timesOut()
+comment5.text=\n\ End\ the\ game\ when\ time\ expires.\n
+numComments=6

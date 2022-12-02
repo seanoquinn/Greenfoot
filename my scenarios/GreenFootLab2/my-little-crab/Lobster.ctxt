@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Lobster
+comment0.text=\n\ This\ class\ defines\ a\ Lobster.\ Lobsters\ eat\ Crabs.\n
+comment1.params=
+comment1.target=void\ act()
+comment1.text=\n\ Act\ -\ do\ whatever\ the\ Lobster\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+comment2.params=
+comment2.target=void\ lookForCrab()
+comment2.text=\n\ Check\ whether\ we\ have\ found\ a\ work.\n\ If\ we\ have,\ eat\ it.\ If\ not,\ do\ nothing.\n
+comment3.params=
+comment3.target=void\ randomTurn()
+comment3.text=\n\ Genrate\ a\ random\ movement.\n\ Get\ a\ random\ number\ between\ 0-99\ and\ if\ less\ than\ 10,\n\ Then\ rotate\ the\ object\ 45\ degrees\ in\ either\ direction.\n
+comment4.params=
+comment4.target=void\ turnAtEdge()
+comment5.params=
+comment5.target=void\ center()
+numComments=6

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=OneUp
+comment0.text=\n\ Write\ a\ description\ of\ class\ OneUp\ here.\n\ \n\ @author\ (Sean\ O'Quinn)\ \n\ @version\ (1.0)\n
+comment1.params=
+comment1.target=void\ act()
+comment1.text=\n\ Act\ -\ do\ whatever\ the\ OneUp\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+comment2.params=
+comment2.target=void\ passed()
+comment2.text=\n\ When\ the\ extra\ life\ passes\ through\ the\ game,\ remove\ the\ extra\ life.\n
+numComments=3
