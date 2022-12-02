@@ -19,7 +19,7 @@ public class OuterSpace extends World
         super(900, 700, 1); 
         prepare();
         setPaintOrder(InvaderDefender.class,Lazer.class);
-        shieldLevel = 25;
+        shieldLevel = 100;
         score = 0;
         showScore();
         showShieldLevel();
