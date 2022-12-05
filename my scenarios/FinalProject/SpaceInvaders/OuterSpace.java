@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class OuterSpace extends World
 {
-    private int shieldLevel;
+    public int shieldLevel;
     private int score;
     /**
      * Constructor for objects of class OuterSpace.
@@ -21,6 +21,7 @@ public class OuterSpace extends World
         setPaintOrder(InvaderDefender.class,Lazer.class);
         shieldLevel = 100;
         score = 0;
+        //Greenfoot.playSound("game-play.wav");
         showScore();
         showShieldLevel();
     }
@@ -33,10 +34,10 @@ public class OuterSpace extends World
        }
        if (Greenfoot.getRandomNumber(1000) < 1)
        {
-        addObject(new OneUp(), Greenfoot.getRandomNumber(870), 52);
+        addObject(new Shield(), Greenfoot.getRandomNumber(870), 52);
        }
        win();
-       lose();
+       //lose();
     }
     /**
      * Prepare the world for the start of the program.
@@ -82,7 +83,7 @@ public class OuterSpace extends World
      */
     private void win()
     {
-        if (score == 400)
+        if (score >= 400)
         {
             //Greenfoot.playSound(".wav");
             showText("YOU WIN!",450,350);
@@ -92,13 +93,16 @@ public class OuterSpace extends World
     /**
      * Lose. Play a sad song, display losing text, and stop the game.
      */
-    private void lose()
+    public void lose()
     {
-        if (shieldLevel == 0)
-        {
+        showText("YOU LOSE!",450,350);
+        //Greenfoot.playSound("game-over.wav");
+        Greenfoot.stop();
+        //if (shieldLevel <= 0)//calling this method from the InvaderDefender class
+        //{
             //Greenfoot.playSound(".wav");
-            showText("YOU LOSE!",450,350);
-            Greenfoot.stop();
-        }
+            //showText("YOU LOSE!",450,350);
+            //Greenfoot.stop();
+        //}
     }
 }

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Shield
+comment0.text=\n\ Write\ a\ description\ of\ class\ Shield\ here.\n\ \n\ @author\ (Sean\ O'Quinn)\ \n\ @version\ (1.0)\n
+comment1.params=
+comment1.target=void\ act()
+comment1.text=\n\ Act\ -\ do\ whatever\ the\ Shield\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+comment2.params=
+comment2.target=void\ passed()
+comment2.text=\n\ When\ the\ shield\ passes\ through\ the\ game,\ remove\ the\ shield.\n
+numComments=3
