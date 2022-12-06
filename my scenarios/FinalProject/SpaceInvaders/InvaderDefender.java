@@ -1,7 +1,9 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class InvaderDefender here.
+ * InvaderDefender is the hero of the game. The defender has the ability to move right and left, 
+ * shoot lazers to destroy invaders, and recover shield points. If the invaders collide with the
+ * defender, the defenders shield is reduced.
  * 
  * @author (Sean O'Quinn) 
  * @version (1.0)
@@ -33,7 +35,7 @@ public class InvaderDefender extends Actor
     }
 
     /**
-     * Check whether the "left" or "right" key has been pressed and move
+     * Check if the "left" or "right" key has been pressed and move
      * right or left if true.
      */
     private void checkKeyPressLR()
@@ -49,14 +51,14 @@ public class InvaderDefender extends Actor
         }
     }
     /**
-     * Check whether the "f" key has been pressed and create a lazer if true.
+     * Check if the "f" key has been pressed and create a lazer if true.
      */
      private void fire()
      {
         if (Greenfoot.isKeyDown("f") && counter <= 0)
         {
-            int x = getX();
-            int y = getY();
+            int x = getX();//gets the x coordinate of the defender and sets it to the new lazer
+            int y = getY();//gets the y coordinate of the defender and sets it to the new lazer
             getWorld().addObject(new Lazer(),x, y);
             counter = 15;//resets the counter to avoid multiple lazers being fired for a perceived single key stroke.
             Greenfoot.playSound("shoot.wav");
@@ -72,11 +74,8 @@ public class InvaderDefender extends Actor
         int shieldLevel = outerspace.shieldLevel;
         if (isTouching (Invader.class) && shieldLevel > 0)
         {
-            //setImage(image2);
             Greenfoot.playSound("hurt.wav");
-            //Greenfoot.stop(); //moved this stop to OuterSpace.lose
             removeTouching(Invader.class);
-            //OuterSpace outerspace = (OuterSpace)getWorld();
             outerspace.addShield(-25);
         }
         else if (isTouching(Invader.class) && shieldLevel <= 0)
@@ -87,8 +86,7 @@ public class InvaderDefender extends Actor
         }
      }
     /**
-     * Check for a collision with an extra life. If there is a collision, add
-     * a life.
+     * Check for a collision with a shield. If there is a collision, increase the shield amount.
      */
      private void checkShieldCollision()
      {
