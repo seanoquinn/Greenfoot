@@ -51,7 +51,7 @@ public class InvaderDefender extends Actor
         }
     }
     /**
-     * Check if the "f" key has been pressed and create a lazer if true.
+     * Check if the "f" key has been pressed. If true, create a lazer.
      */
      private void fire()
      {
