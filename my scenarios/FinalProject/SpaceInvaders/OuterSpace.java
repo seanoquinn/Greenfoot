@@ -1,7 +1,8 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class OuterSpace here.
+ * OuterSpace sets the stage for the game, and contains core game elemets,
+ * like the score, the creation of the defender, and generation of invader and shields.
  * 
  * @author (Sean O'Quinn) 
  * @version (1.0)
@@ -37,7 +38,6 @@ public class OuterSpace extends World
         addObject(new Shield(), Greenfoot.getRandomNumber(870), 52);
        }
        win();
-       //lose();
     }
     /**
      * Prepare the world for the start of the program.
@@ -91,18 +91,12 @@ public class OuterSpace extends World
         }
     }
     /**
-     * Lose. Play a sad song, display losing text, and stop the game.
+     * Lose. Display losing text, and stop the game.
      */
     public void lose()
     {
         showText("YOU LOSE!",450,350);
         //Greenfoot.playSound("game-over.wav");
         Greenfoot.stop();
-        //if (shieldLevel <= 0)//calling this method from the InvaderDefender class
-        //{
-            //Greenfoot.playSound(".wav");
-            //showText("YOU LOSE!",450,350);
-            //Greenfoot.stop();
-        //}
     }
 }

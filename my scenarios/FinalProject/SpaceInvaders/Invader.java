@@ -1,7 +1,8 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Invader here.
+ * Invader is the enemy. The invader moves methodically down the game screen. If he
+ * reaches the end of the screen, the defenders score is reduced.
  * 
  * @author (Sean O'Quinn) 
  * @version (1.0)
@@ -19,7 +20,8 @@ public class Invader extends Actor
 
     }
     /**
-     * When the invader passes through the game, remove the invader.
+     * When the invader passes through the game, remove the invader and decrease
+     * the player's score.
      */
      private void passed()
      {

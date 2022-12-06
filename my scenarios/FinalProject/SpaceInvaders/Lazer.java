@@ -1,7 +1,8 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class lazer here.
+ * Lazer destroys an invader. If the lazer misses its target, then it continues until reaching 
+ * the end of the screen.
  * 
  * @author (Sean O'Quinn) 
  * @version (1.0)
@@ -18,7 +19,7 @@ public class Lazer extends Actor
         checkInvaderCollision();
     }
     /**
-     * Check is the lazer has collided with an invader. If yes, remove invader.
+     * Check if the lazer has collided with an invader. If true, remove invader.
      */
     private void checkInvaderCollision()
     {
@@ -36,7 +37,7 @@ public class Lazer extends Actor
         }
     }
     /**
-     * Check is the lazer has pass through the world. If yes, remove lazer.
+     * Check if the lazer has passed through the world. If true, remove lazer.
      */
     private void passed()
     {

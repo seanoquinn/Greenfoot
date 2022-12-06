@@ -18,7 +18,7 @@ public class Shield extends Actor
         passed();
     }
     /**
-     * When the shield passes through the game, remove the shield.
+     * Check if the shield has passed through the world. If true, remove shield.
      */
      private void passed()
      {
