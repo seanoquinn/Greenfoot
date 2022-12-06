@@ -19,7 +19,7 @@ public class Lazer extends Actor
         checkInvaderCollision();
     }
     /**
-     * Check is the lazer has collided with an invader. If true, remove invader.
+     * Check if the lazer has collided with an invader. If true, remove invader.
      */
     private void checkInvaderCollision()
     {
@@ -37,7 +37,7 @@ public class Lazer extends Actor
         }
     }
     /**
-     * Check is the lazer has passed through the world. If true, remove lazer.
+     * Check if the lazer has passed through the world. If true, remove lazer.
      */
     private void passed()
     {
