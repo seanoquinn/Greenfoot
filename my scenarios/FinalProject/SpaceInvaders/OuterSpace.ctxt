@@ -26,5 +26,5 @@ comment8.target=void\ win()
 comment8.text=\n\ Win.\ Play\ a\ victory\ song,\ display\ winning\ text,\ and\ stop\ the\ game.\ \n
 comment9.params=
 comment9.target=void\ lose()
-comment9.text=\n\ Lose.\ Play\ a\ sad\ song,\ display\ losing\ text,\ and\ stop\ the\ game.\n
+comment9.text=\n\ Lose.\ Display\ losing\ text,\ and\ stop\ the\ game.\n
 numComments=10

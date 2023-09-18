@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=InvaderDefender
-comment0.text=\n\ Write\ a\ description\ of\ class\ InvaderDefender\ here.\n\ \n\ @author\ (Sean\ O'Quinn)\ \n\ @version\ (1.0)\n
+comment0.text=\n\ InvaderDefender\ is\ the\ hero\ of\ the\ game.\ The\ defender\ has\ the\ ability\ to\ move\ right\ and\ left,\ \n\ shoot\ lazers\ to\ destroy\ invaders,\ and\ recover\ shield\ points.\ If\ the\ invaders\ collide\ with\ the\n\ defender,\ the\ defenders\ shield\ is\ reduced.\n\ \n\ @author\ (Sean\ O'Quinn)\ \n\ @version\ (1.0)\n
 comment1.params=
 comment1.target=InvaderDefender()
 comment1.text=\n\ Create\ a\ defender\ and\ initialize\ its\ two\ images.\n
@@ -9,14 +9,14 @@ comment2.target=void\ act()
 comment2.text=\n\ Act\ -\ do\ whatever\ the\ InvaderDefender\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
 comment3.params=
 comment3.target=void\ checkKeyPressLR()
-comment3.text=\n\ Check\ whether\ the\ "left"\ or\ "right"\ key\ has\ been\ pressed\ and\ move\n\ right\ or\ left\ if\ true.\n
+comment3.text=\n\ Check\ if\ the\ "left"\ or\ "right"\ key\ has\ been\ pressed\ and\ move\n\ right\ or\ left\ if\ true.\n
 comment4.params=
 comment4.target=void\ fire()
-comment4.text=\n\ Check\ whether\ the\ "f"\ key\ has\ been\ pressed\ and\ create\ a\ lazer\ if\ true.\n
+comment4.text=\n\ Check\ if\ the\ "f"\ key\ has\ been\ pressed.\ If\ true,\ create\ a\ lazer.\n
 comment5.params=
 comment5.target=void\ checkInvaderCollision()
 comment5.text=\n\ Check\ for\ a\ collision\ with\ an\ invader.\ If\ there\ is\ a\ collision,\ reduce\ the\ shield.\ Once\ the\ shield\n\ is\ depleted,\ the\ final\ collision\ will\ end\ the\ game.\n
 comment6.params=
 comment6.target=void\ checkShieldCollision()
-comment6.text=\n\ Check\ for\ a\ collision\ with\ an\ extra\ life.\ If\ there\ is\ a\ collision,\ add\n\ a\ life.\n
+comment6.text=\n\ Check\ for\ a\ collision\ with\ a\ shield.\ If\ there\ is\ a\ collision,\ increase\ the\ shield\ amount.\n
 numComments=7

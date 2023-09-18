@@ -1,13 +1,13 @@
 #BlueJ class context
 comment0.target=Lazer
-comment0.text=\n\ Write\ a\ description\ of\ class\ lazer\ here.\n\ \n\ @author\ (Sean\ O'Quinn)\ \n\ @version\ (1.0)\n
+comment0.text=\n\ Lazer\ destroys\ an\ invader.\ If\ the\ lazer\ misses\ its\ target,\ then\ it\ continues\ until\ reaching\ \n\ the\ end\ of\ the\ screen.\n\ \n\ @author\ (Sean\ O'Quinn)\ \n\ @version\ (1.0)\n
 comment1.params=
 comment1.target=void\ act()
 comment1.text=\n\ Act\ -\ do\ whatever\ the\ lazer\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
 comment2.params=
 comment2.target=void\ checkInvaderCollision()
-comment2.text=\n\ Check\ is\ the\ lazer\ has\ collided\ with\ an\ invader.\ If\ yes,\ remove\ invader.\n
+comment2.text=\n\ Check\ if\ the\ lazer\ has\ collided\ with\ an\ invader.\ If\ true,\ remove\ invader.\n
 comment3.params=
 comment3.target=void\ passed()
-comment3.text=\n\ Check\ is\ the\ lazer\ has\ pass\ through\ the\ world.\ If\ yes,\ remove\ lazer.\n
+comment3.text=\n\ Check\ if\ the\ lazer\ has\ passed\ through\ the\ world.\ If\ true,\ remove\ lazer.\n
 numComments=4

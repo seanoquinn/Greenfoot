@@ -1,10 +1,10 @@
 #BlueJ class context
 comment0.target=Invader
-comment0.text=\n\ Write\ a\ description\ of\ class\ Invader\ here.\n\ \n\ @author\ (Sean\ O'Quinn)\ \n\ @version\ (1.0)\n
+comment0.text=\n\ Invader\ is\ the\ enemy.\ The\ invader\ moves\ methodically\ down\ the\ game\ screen.\ If\ he\n\ reaches\ the\ end\ of\ the\ screen,\ the\ defenders\ score\ is\ reduced.\n\ \n\ @author\ (Sean\ O'Quinn)\ \n\ @version\ (1.0)\n
 comment1.params=
 comment1.target=void\ act()
 comment1.text=\n\ Act\ -\ do\ whatever\ the\ Invader\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
 comment2.params=
 comment2.target=void\ passed()
-comment2.text=\n\ When\ the\ invader\ passes\ through\ the\ game,\ remove\ the\ invader.\n
+comment2.text=\n\ When\ the\ invader\ passes\ through\ the\ game,\ remove\ the\ invader\ and\ decrease\n\ the\ player's\ score.\n
 numComments=3

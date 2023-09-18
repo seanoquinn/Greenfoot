@@ -6,5 +6,5 @@ comment1.target=void\ act()
 comment1.text=\n\ Act\ -\ do\ whatever\ the\ Shield\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
 comment2.params=
 comment2.target=void\ passed()
-comment2.text=\n\ When\ the\ shield\ passes\ through\ the\ game,\ remove\ the\ shield.\n
+comment2.text=\n\ Check\ if\ the\ shield\ has\ passed\ through\ the\ world.\ If\ true,\ remove\ shield.\n
 numComments=3
